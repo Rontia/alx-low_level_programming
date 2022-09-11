@@ -1,12 +1,9 @@
 #!/bin/bash
 #include <stdio.h>
 
-#include <stdio.h>
-
-
 
 /**
- *main - printing
+ *main - Printing
  *
  * return: Always 0 (Successful)
  */
