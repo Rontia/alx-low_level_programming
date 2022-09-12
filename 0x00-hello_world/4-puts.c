@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
-* main - printing 
+* main - printing
 *
 * Description: using the main function
 * this program prints programming is like building a multIlingual puzzle
