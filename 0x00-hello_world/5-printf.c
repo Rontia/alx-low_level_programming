@@ -3,10 +3,11 @@
 /**
 * main - prints a text
 *
-* Description: Printing with proper grammar
-* Return: Always 0 (Success)
+* Description: using the main function
+* this program is printing"just like the previous one as a build-up
+* Return: 0
 */
 int main(void)
 {printf("with proper grammer, but the outcome is a piece of art,\n");
-retun (0);
+return (0);
 }
