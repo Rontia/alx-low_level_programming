@@ -20,7 +20,7 @@
 int main(void){
 
 	char ch[8] = "_putchar";
-	int i + 0;
+	int i=0;
 	char c;
 
 	while(i <= 8) {
