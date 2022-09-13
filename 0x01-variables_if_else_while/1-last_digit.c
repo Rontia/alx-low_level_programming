@@ -6,7 +6,6 @@
 * main - print if number is positive or negative
 *
 * Description: main function being used
-*
 * this program prints "programming is positive , negative or zero
 * Return (0)
 */
