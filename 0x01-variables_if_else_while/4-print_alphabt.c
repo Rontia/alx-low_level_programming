@@ -7,12 +7,12 @@
 * Return: 0
 */
 int main(void)
-{char ch;
-for (ch = 'a' ; ch <='z' ; ch++)
-{
-if (ch != 'e' ; && ch != 'q')
-{putchar(ch);
+char c;
+for (c = 'a' ; c <= 'z'; c++)
+{if (c != 'e' && c != 'q')
+{putchar(c);
 }
-}putchat('\n');
+}
+putchar('\n');
 return (0);
 }
