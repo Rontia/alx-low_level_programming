@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 /**
 * isalpha - function to check if c is a letter , lowercase or uppercase
 * Description: Function checking the alphabet
