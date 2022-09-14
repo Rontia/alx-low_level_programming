@@ -4,7 +4,7 @@
 *
 * return: 0
 */
-void print_alphabet - function(void)
+void print_alphabet(void)
 {
 	char c;
 
