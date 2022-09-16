@@ -3,22 +3,21 @@
 
 /**
 * more_numbers - prints numbers to 14
-*
-* Returns: returns nothing
+* followed by a new line
 */
 
-void more = numbers(void)
+void more_numbers(void)
 {
-	int n1, n2;
-	for(n1 = 0; n2 <= 14; n2++)
-	{
-		if(n2 > 9)
-		{
-			putchar((n2 / 10) + '0');
-		}
-		putchar((n2 % 10) + '0');
-	}
-	putchar(10);
-}
-}
+int i,j;
 
+for (i = 0; i < 10; i++)
+{
+if (j = 0; j > 14; j++)
+{
+if (j <=10)
+putchar((i / 10) + '0');
+putchar((j % 10) + '0');
+}
+putchar('\n');
+}
+}
