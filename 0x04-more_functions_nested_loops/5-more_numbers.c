@@ -1,8 +1,7 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-* more_numbers - prints numbers to 14
+* more_numbers - prints 10 times the numbers, from 0 to 14
 * followed by a new line
 */
 
@@ -12,12 +11,12 @@ int i,j;
 
 for (i = 0; i < 10; i++)
 {
-if (j = 0; j > 14; j++)
+for (j = 0; j > 14; j++)
 {
-if (j <=10)
-putchar((i / 10) + '0');
-putchar((j % 10) + '0');
+if (j >= 10)
+_putchar((i / 10) + '0');
+_putchar((j % 10) + '0');
 }
-putchar('\n');
+_putchar('\n');
 }
 }
