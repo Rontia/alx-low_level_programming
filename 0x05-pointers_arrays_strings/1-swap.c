@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* swap int -> swapping the given integers
+* swap int -> given two integers swap the values they are holding
 * @a: parameter 1
 * @b: parameter 2
 */
