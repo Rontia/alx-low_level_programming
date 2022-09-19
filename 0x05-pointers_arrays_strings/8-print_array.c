@@ -7,7 +7,7 @@
  *@n: number of values
  *Return: returns a and n inputs
 */
-char *_strcpy(char *dest, char *src)
+void print_array(int *a, int n);
 {
 int s;
 
