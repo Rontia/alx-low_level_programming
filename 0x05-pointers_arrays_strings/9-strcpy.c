@@ -13,7 +13,7 @@ int len = 0;
 
 while (*(src + len) != '\0')
 {
-*(dest + len) = *(src + len)
+*(dest + len) = *(src + len);
 len++;
 }
 
