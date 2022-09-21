@@ -2,7 +2,7 @@
 
 /**
  * cap_string - function that capitalises the first character of a word
- * @str: string to capitalize
+ * @s: string to capitalize
  * Return: returns the capitalized string
  */
 
@@ -10,26 +10,26 @@ char *cap_string(char *)
 {
 int index = 0;
 
-while (str[++index])
+while (s[++index])
 {
-while (!(str[index] >= 'a') && (str[index] <= 'z'))
+while (!(s[index] >= 'a') && (s[index] <= 'z'))
 index++;
 
-if (str[index - 1] == ' ' ||
-str[index - 1] == '\t' ||
-str[index - 1] == '\n' ||
-str[index - 1] == ',' ||
-str[index - 1] == ';' ||
-str[index - 1] == '.' ||
-str[index - 1] == '!' ||
-str[index - 1] == '?' ||
-str[index - 1] == '"' ||
-str[index - 1] == '(' ||
-str[index - 1] == ')' ||
-str[index - 1] == '{' ||
-str[index - 1] == '}' ||
-str[index] -= 32;
+if (s[index - 1] == ' ' ||
+s[index - 1] == '\t' ||
+s[index - 1] == '\n' ||
+s[index - 1] == ',' ||
+s[index - 1] == ';' ||
+s[index - 1] == '.' ||
+s[index - 1] == '!' ||
+s[index - 1] == '?' ||
+s[index - 1] == '"' ||
+s[index - 1] == '(' ||
+s[index - 1] == ')' ||
+s[index - 1] == '{' ||
+s[index - 1] == '}' ||
+s[index] -= 32;
 }
 
-return (str);
+return (s);
 }
