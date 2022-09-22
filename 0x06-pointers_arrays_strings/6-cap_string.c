@@ -3,33 +3,30 @@
 /**
  * cap_string - function that capitalises the first character of a word
  * @s: string to capitalize
- * Return: returns the capitalized string
+ * Return: address of s
  */
 
 char *cap_string(char *)
 {
-int index = 0;
+	int i = 0, j;
+	char a[] = " \t\n,;.!?\"(){}";
 
-while (s[++index])
-{
-while (!(s[index] >= 'a') && (s[index] <= 'z'))
-index++;
-
-if (s[index - 1] == ' ' ||
-s[index - 1] == '\t' ||
-s[index - 1] == '\n' ||
-s[index - 1] == ',' ||
-s[index - 1] == ';' ||
-s[index - 1] == '.' ||
-s[index - 1] == '!' ||
-s[index - 1] == '?' ||
-s[index - 1] == '"' ||
-s[index - 1] == '(' ||
-s[index - 1] == ')' ||
-s[index - 1] == '{' ||
-s[index - 1] == '}' ||
-s[index] -= 32;
-}
-
-return (s);
+	while (*(s + i))
+	{
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		{
+			if (i == 0)
+				*(s + i) -= 'a' - 'A';
+			else
+			{
+				for (j = 0; j < 12; j++)
+				{
+					if(a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
+				}
+			}
+		}
+		i++;
+	}
+	return (s);
 }
