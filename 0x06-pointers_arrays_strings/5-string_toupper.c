@@ -2,21 +2,20 @@
 
 /**
  * string_toupper - converts string to uppercase
- * @s: string
+ * @s: parameter
  *
- * Return: s
+ * Return: returns a character
  */
 
 char *string_toupper(char *)
 {
-int x;
+int index = 0;
 
-for (x = 0; s[x] != '\0'; x++)
+while (str[index++])
 {
-if (s[x] > 96 && s[x] < 123)
-{
-s[x] -= 32;
+if (str[index] >= 'a' && str[index] <= 'z')
+str[index] -= 32;
 }
-}
-return (s);
+
+return (str);
 }
