@@ -13,7 +13,7 @@ int index = 0;
 
 while (str[index++])
 {
-if (str[index] >= 'a' && str[index] <= 'z')
+if (str[index] >= 'a' && str[index] <= 'Z')
 str[index] -= 32;
 }
 
