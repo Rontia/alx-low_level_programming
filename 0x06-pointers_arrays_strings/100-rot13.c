@@ -8,22 +8,21 @@
 
 char *rot13(char *)
 {
-int x,y;
+int i, j;
+char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-for (x = 0, s[x] != '\0'; x++)
+for (i = 0; *(s + i); i++)
 {
-for (y = 0; input[y] != '\0'; y++)
+for (j = 0; j < 52; j++)
 {
-if (s[x] == input[y])
+if (a[j] == *(s + i))
 {
-s[x] = output[y];
+*(s + i) = b[j];
 break;
 }
 }
 }
+
 return (s);
 }
-
